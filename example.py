@@ -215,26 +215,80 @@ students = {
 # print(words)
 
 
-text = "hello world python"
+# text = "hello world python"
 
-words=text.split()
-final=[]
+# words=text.split()
+# final=[]
 
-for  i in words:
-    rev=""
-    for alph in i:
+# for  i in words:
+#     rev=""
+#     for alph in i:
         
-        rev=alph +rev
-    final.append(rev)
-result= " ".join(final)
-print(result)
-        
-        
-    
-    
-    
+#         rev=alph +rev
+#     final.append(rev)
+# result= " ".join(final)
+# print(result) 
+
+# text="hyyyyy bro how are you"
+
+# word=text.split()
+
+# lst=[]
+
+# for i in word:
+#     rev=""
+#     for char in i:
+#         rev= char + rev
+#     lst.append(rev)
+#     res= " ".join(lst)
+# print(res)
+
  
+# def factorial (n):
     
+#     if n ==1:
+#         return n
+#     return n * factorial(n-1)
+
+# print(factorial(5))
+
+# text="manhar gurukkal ck"
+# word=text.split()
+# res=[]
+
+# for i in word:
+#     txt=""
+#     for char in i:
+#         txt=char+txt
+#         # res.append(txt)
+#     res.append(txt)
+# result=" ".join(res)
+# print(result)
+
+
+# text="manhar gurukkal ck"
+# word=text.split()
+# res=""
+# for i in word:
+#     if len(i)>len(res):
+#         res=i
+        
+# print(res)        
+        
+txt="manhar gurukkal ck"
+result=""
+# duplicate=""
+
+for i in txt:
+    if i not in result:
+        result +=i
+    # else:
+    #     duplicate +=i
+        
+print(result)
+# print(duplicate)
+
+
 
 
 
