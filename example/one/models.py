@@ -12,17 +12,8 @@ class Patient(models.Model):
     hospital=models.ForeignKey(Hospital,on_delete=models.CASCADE,related_name="hsptl")
     bill_amount=models.IntegerField()
 
-def __str__(self):
-    return self.name
-
-
-
-
-
-
-
-
-
+    def __str__(self):
+        return self.name
 
 
 

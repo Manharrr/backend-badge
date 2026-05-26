@@ -288,6 +288,71 @@ for i in txt:
 print(result)
 # print(duplicate)
 
+# def one(n):
+#     if n==1:
+#         return 1
+#     return n* one(n-1)
+    
+# print(one(5))
+
+# def one(n):
+#     if n==0:
+#         return
+#     print(n)
+#     return one(n-1)
+# one(5)
+# txt="aaabbc" 
+# ans={}
+# for i in txt:
+#     if i in ans:
+#         ans[i]+=1
+#     else:
+#         ans[i]=1
+# print(ans)
+    
+# res =''
+
+# for k,v in ans.items():
+#     res += f'{k}{v}'
+    
+# print(res) 
+
+txt="aaabbc" 
+
+ans={}
+for i in txt:
+    if i in ans:
+        ans[i]+=1
+    else:
+        ans[i]=1
+print(ans)
+result=""
+for k,v in ans.items():
+    result+=f"{k}{v}"
+# print("".join(result))
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
