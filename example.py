@@ -275,18 +275,18 @@ students = {
         
 # print(res)        
         
-txt="manhar gurukkal ck"
-result=""
-# duplicate=""
+# txt="manhar gurukkal ck"
+# result=""
+# # duplicate=""
 
-for i in txt:
-    if i not in result:
-        result +=i
-    # else:
-    #     duplicate +=i
+# for i in txt:
+#     if i not in result:
+#         result +=i
+#     # else:
+#     #     duplicate +=i
         
-print(result)
-# print(duplicate)
+# print(result)
+# # print(duplicate)
 
 # def one(n):
 #     if n==1:
@@ -317,84 +317,51 @@ print(result)
     
 # print(res) 
 
-txt="aaabbc" 
-
-ans={}
-for i in txt:
-    if i in ans:
-        ans[i]+=1
-    else:
-        ans[i]=1
-print(ans)
-result=""
-for k,v in ans.items():
-    result+=f"{k}{v}"
-# print("".join(result))
-print(result)
 
 
+# class Bank:
+#     def __init__(self,name,balance=0):
+#         self.name=name
+#         self.balance=balance
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#     def deposit(self,amount):
+#         self.balance+=amount
+#         print(f"{amount}deposited")
     
+#     def withdraw(self,amount):
+#         if amount >self.balance:
+#             print("no balance")
+#         else:
+#             self.balance-=amount
+#             print(f"{amount}withdraww")
+#     def getbalance(self):
+#         print(self.balance) 
+
+# a=Bank("manhar",5000)
+# a.getbalance()
+# a.deposit(999)
+# a.getbalance()
+# a.withdraw(999)
+# a.getbalance()
 
 
 
+# txt="manhar gurukkal ck"
+# word=txt.split()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# res=[]
+# for i in word:
     
+#     if len(i)>len(res):
+#         res=i
+        
+# result="".join(res)
+# print(result)
+
+
+
+
+
+
+
+
