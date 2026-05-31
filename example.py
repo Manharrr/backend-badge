@@ -286,7 +286,7 @@ students = {
 #     #     duplicate +=i
         
 # print(result)
-# # print(duplicate)
+# print(duplicate)
 
 # def one(n):
 #     if n==1:
@@ -301,6 +301,8 @@ students = {
 #     print(n)
 #     return one(n-1)
 # one(5)
+
+
 # txt="aaabbc" 
 # ans={}
 # for i in txt:
@@ -358,6 +360,29 @@ students = {
 # result="".join(res)
 # print(result)
 
+
+txt="manhar gurukkal changampally"
+
+word=txt.split()
+ans=[]
+
+for i in word:
+    rev=""
+    for char in i:
+        rev=char+ rev
+    ans.append(rev)
+    res=" ".join(ans)
+print(res)
+
+dup=""
+for i in res:
+    if i not in dup:
+        dup+=i
+
+print(dup)
+
+    
+    
 
 
 
