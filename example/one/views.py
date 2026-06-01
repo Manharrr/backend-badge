@@ -1,5 +1,6 @@
 from rest_framework .views import APIView
 from rest_framework import response
+from rest_framework.response import Response
 from rest_framework import status
 
 from .models import Hospital,Patient
@@ -9,15 +10,15 @@ class patientview(APIView):
     def get(self,request):
         patient=Patient.objects.all()
         serializer=patientserializer(patient,many=True)
-        return response(serializer.data)
+        return Response(serializer.data)
     
     def post (self,request):
         serializer=patientserializer(data=request.data)
 
         if serializer.is_valid():
             serializer.save()
-            return response(serializer.data)
-        return response(serializer.error)
+            return Response(serializer.data)
+        return Response(serializer.error)
 
 class patientdetailedview(APIView):
 
@@ -38,13 +39,57 @@ class patientdetailedview(APIView):
         pat.delete()
         return response({'deleted'})
     
-        
-        
+
+
+
+
+
+
+# from rest_framework .views import APIView
+# from .serializers import patientserializer,hospitalserializer
+# from rest_framework import response,status 
+# from .models import hospital,patient
+
+# class patient(APIView):
+#     def get(self,request):
+#         pat=patient.objects.all()
+#         serializer=patientserializer(pat,many=True)
+#         return response(serializer.data)
+#     def post(self,request):
+#         serializer=patientserializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return response(serializer.data)
+#         return response(serializer.error)
 
 
         
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

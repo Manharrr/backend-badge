@@ -20,8 +20,16 @@ class Patient(models.Model):
 
 
 
+# from django .db import models
 
+# class hospital(models.Model):
+#     name=models.CharField(max_length=30)
+#     place=models.CharField(max_length=40)
 
+# class patient(models.Model):
+#     name=models.CharField(max_length=50)
+#     hospital=models.ForeignKey(on_delete= models.CASCADE)
+#     phone=models.IntegerField()
 
 
 
