@@ -1,4 +1,4 @@
-# lst=[2,6,3,1,6,7,89,67,3,4,17]
+lst=[2,6,3,1,6,7,89,67,3,4,17]
 # p=lst[1]=9
 # print(lst)
 
@@ -13,8 +13,8 @@
 # # lst.pop(1)
 # # lst.clear()
 # # lst.sort()
-# # a=lst[::-1]
-# # print(a)
+# a=lst[::-1]
+# print(a)
 # a=lst.copy()
 # print(lst)
 
@@ -36,32 +36,34 @@
     
 #     }
 # print(stud.get("age"))
-# a=stud["place"]="tirur"
+# stud["place"]="tirur"
 # print(stud)
 
 
 
 
-students = {
-    "s1": {
-        "name": "Manhar", 
-        "age": 21,
-        "marks": {
-            "python": 85,
-            "sql": 78,
-            "ml": 90
-        }
-    },
-    "s2": {
-        "name": "Akhil",
-        "age": 22,
-        "marks": {
-            "python": 88,
-            "sql": 82,
-            "ml": 75
-        }
-    }
-}
+# students = {
+#     "s1": {
+#         "name": "Manhar", 
+#         "age": 21,
+#         "marks": {
+#             "python": 85,
+#             "sql": 78,
+#             "ml": 90
+#         }
+#     },
+#     "s2": {
+#         "name": "Akhil",
+#         "age": 22,
+#         "marks": {
+#             "python": 88,
+#             "sql": 82,
+#             "ml": 75
+#         }
+#     }
+# }
+# students["s1"]["marks"]["sql"]=999
+# print(students["s1"]["marks"]["sql"])
 # print(students["s2"]["marks"].get("sql"))
 
 # def decor (func):
@@ -83,8 +85,6 @@ students = {
 #         return a
         
 #     return wrapper
-
-
 
 # @decor
 # def one():
@@ -111,8 +111,8 @@ students = {
 # print(stud1.intro())
 # print(stud2.intro())
 
-
-
+    
+    
 
 
 
@@ -242,15 +242,25 @@ students = {
 #     lst.append(rev)
 #     res= " ".join(lst)
 # print(res)
-
+# def one(n):
+#     if n==0:
+#         return
+#     print(n)
+#     return one(n-1)
+# one(5)
  
 # def factorial (n):
-    
 #     if n ==1:
 #         return n
 #     return n * factorial(n-1)
 
 # print(factorial(5))
+
+
+
+
+
+
 
 # text="manhar gurukkal ck"
 # word=text.split()
@@ -361,28 +371,29 @@ students = {
 # print(result)
 
 
-txt="manhar gurukkal changampally"
+# txt="manhar gurukkal changampally"
 
-word=txt.split()
-ans=[]
+# word=txt.split()
+# ans=[]
 
-for i in word:
-    rev=""
-    for char in i:
-        rev=char+ rev
-    ans.append(rev)
-    res=" ".join(ans)
-print(res)
+# for i in word:
+#     rev=""
+#     for char in i:
+#         rev=char+ rev
+#     ans.append(rev)
+#     res=" ".join(ans)
+# print(res)
 
-dup=""
-for i in res:
-    if i not in dup:
-        dup+=i
+# dup=""
+# for i in res:
+#     if i not in dup:
+#         dup+=i
 
-print(dup)
+# print(dup)
+
 
     
-    
+
 
 
 
