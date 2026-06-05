@@ -385,11 +385,11 @@ lst=[2,6,3,1,6,7,89,67,3,4,17]
 # print(res)
 
 # dup=""
-# for i in res:
-#     if i not in dup:
-#         dup+=i
+# # for i in res:
+# #     if i not in dup:
+# #         dup+=i
 
-# print(dup)
+# # print(dup)
 
 
     
@@ -399,5 +399,38 @@ lst=[2,6,3,1,6,7,89,67,3,4,17]
 
 
 
+# txt="heloooo bro how are you"
+
+# word=txt.split()
+# res=[]
+
+# for i in word:
+#     rev=""
+#     for char in i:
+#         rev =char+rev
+#     res.append(rev)
+# result=" ".join(res)
+# print(result)
+
+# dup=""
+# for i in result:
+#     if i not in dup:
+#         dup +=i
+# print(dup)
 
 
+txt="aaabbc"
+ans={}
+
+for i in txt:
+    if i in ans:
+        ans[i] +=1
+    else:
+        ans[i] =1
+print(ans)
+
+res=""
+for k,v in ans.items():
+    res += f"{k}{v}"
+print( " ".join(res))
+    
