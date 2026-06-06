@@ -419,18 +419,12 @@ lst=[2,6,3,1,6,7,89,67,3,4,17]
 # print(dup)
 
 
-txt="aaabbc"
-ans={}
+# txt="aaabbc"
+# ans={}
 
-for i in txt:
-    if i in ans:
-        ans[i] +=1
-    else:
-        ans[i] =1
-print(ans)
-
-res=""
-for k,v in ans.items():
-    res += f"{k}{v}"
-print( " ".join(res))
-    
+# for i in txt:
+#     if i in ans:
+#         ans[i] +=1
+#     else:
+#         ans[i] =1
+# print(ans)
